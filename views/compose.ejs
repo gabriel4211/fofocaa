@@ -1,0 +1,21 @@
+<%- include('partials/header'); -%>
+
+<div class="blog-container compose-container">
+    <form action="/compose" method="post">
+        <div class="col-md-12">
+            <h1 class="post-title compose-hero">
+                Cuidado, cobras estão para todo lugar
+            </h1>
+            <input type="text" name="title" class="compose-input title-input" placeholder="É sobre quem esse babado?" required/>
+            <textarea placeholder="Começa a contar essa fofoquinha ai, já estou amando..." name="post" type="text" required
+                class="compose-input"></textarea>
+        </div>
+        <div class="col-md-12">
+            <button type="submit" class="read-more publish-btn">
+                Publicar
+            </button>
+        </div>
+    </form>
+</div>
+
+<%- include('partials/footer'); -%>
